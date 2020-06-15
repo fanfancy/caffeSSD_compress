@@ -1,0 +1,11 @@
+F0401 19:17:08.488368 24332 caffe.cpp:262] Check failed: FLAGS_model.size() > 0 (0 vs. 0) Need a model definition to score.
+*** Check failure stack trace: ***
+    @     0x7fd2cda455cd  google::LogMessage::Fail()
+    @     0x7fd2cda47433  google::LogMessage::SendToLog()
+    @     0x7fd2cda4515b  google::LogMessage::Flush()
+    @     0x7fd2cda47e1e  google::LogMessageFatal::~LogMessageFatal()
+    @           0x40a539  test()
+    @           0x4077c8  main
+    @     0x7fd2cc907830  __libc_start_main
+    @           0x408099  _start
+    @              (nil)  (unknown)

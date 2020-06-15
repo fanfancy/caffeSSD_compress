@@ -1,0 +1,27 @@
+train_net: "models/VGGNet/NWPU_VHR/SSD_300x300_0325_conv4_2/train.prototxt"
+test_net: "models/VGGNet/NWPU_VHR/SSD_300x300_0325_conv4_2/test.prototxt"
+test_iter: 123
+test_interval: 2000
+base_lr: 0.0010000000475
+display: 10
+max_iter: 60000
+lr_policy: "multistep"
+gamma: 0.10000000149
+momentum: 0.899999976158
+weight_decay: 0.000500000023749
+snapshot: 2000
+snapshot_prefix: "models/VGGNet/NWPU_VHR/SSD_300x300_0325_conv4_2/VGG_NWPU_VHR_SSD_300x300_0324_conv5_2"
+solver_mode: GPU
+device_id: 0
+debug_info: false
+snapshot_after_train: true
+test_initialization: true
+average_loss: 10
+stepvalue: 8000
+stepvalue: 9000
+stepvalue: 10000
+iter_size: 1
+type: "SGD"
+eval_type: "detection"
+ap_version: "11point"
+
